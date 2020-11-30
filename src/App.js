@@ -20,7 +20,7 @@ inputChangeHandler = (event) => {
       <p className="App">Udemy React Assignment One</p>
       <UserInput
       currentName={this.state.username}
-      inputChange={this.inputChangeHandler}
+      inputChange={this.inputChangeHandler.bind(this)}
       />
       <UserOutput
       currentName={this.state.username}
